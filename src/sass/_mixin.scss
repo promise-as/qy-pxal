@@ -1,0 +1,25 @@
+$color: #23b8ff;
+$bcolor: #368ee0;
+%clear{content: "";display: block;clear: both;}
+%font{font-family: candara;}
+%one{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+%displayflex{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+%flex{-webkit-box-flex:1;-webkit-flex:1;-ms-flex:1;flex:1;}
+%boxsizing{-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+%dsline{display: inline-block;*z-index: 1;*display: inline;}
+@mixin alignitem($posi){-webkit-box-align:$posi;-webkit-align-items:$posi;-ms-flex-align:$posi;align-items:$posi;}
+@mixin bggradient($posi,$ac,$bc){background: -webkit-linear-gradient($posi,$ac,$bc);background: -moz-linear-gradient($posi,$ac,$bc);background: -ms-linear-gradient($posi,$ac,$bc);background: -o-linear-gradient($posi,$ac,$bc);background: linear-gradient($posi,$ac,$bc);}
+@mixin background($posi,$num){background-repeat: no-repeat;background-position: $posi;background-size: $num;}
+@mixin lin($num){display: -webkit-box !important;-webkit-box-orient: vertical;word-break:break-all;text-overflow: ellipsis;overflow: hidden;-webkit-line-clamp:$num;}
+@mixin tran($num,$play){transition: all $num $play;-webkit-transition: all $num $play;-moz-transition: all $num $play;-ms-transition: all $num $play;-o-transition: all $num $play;}
+@mixin table($posi){display: table-cell;vertical-align: $posi;}
+
+@mixin max-screen($num){
+    @media screen and (max-width: $num){
+        @content;
+    }
+}
+$baseFontSize: 75px !default;
+@function frem($number) {
+    @return ($number / $baseFontSize) * 1rem;
+}
