@@ -1386,7 +1386,10 @@ a:hover {
     font-size: 14px;
     line-height: 40px;
     color: #666;
-    text-align: center;
+    // text-align: center;
+    .v_video_con{
+      text-align: center;
+    }
     p {
       text-indent: 40px;
     }

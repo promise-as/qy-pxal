@@ -529,7 +529,9 @@ a:hover { color: #368ee0; }
 
 .zd-fl .zd-tit span { margin-right: 35px; color: #999; line-height: 40px; }
 
-.zd-fl .zd-cont { padding: 30px 18px; border-bottom: 2px solid #ddd; font-size: 14px; line-height: 40px; color: #666; text-align: center; }
+.zd-fl .zd-cont { padding: 30px 18px; border-bottom: 2px solid #ddd; font-size: 14px; line-height: 40px; color: #666; }
+
+.zd-fl .zd-cont .v_video_con { text-align: center; }
 
 .zd-fl .zd-cont p { text-indent: 40px; }
 
